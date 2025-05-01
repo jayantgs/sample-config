@@ -28,7 +28,7 @@ app:
     
     # The maximum number of instances. Cannot be less than the min value. 
     # Defaults to the min value if not set.
-    max: 1
+    max: 2
     
   # Configure vCPU and indirectly memory resources for the application. 
   # The memory assigned to the application is directly proportional to the 
@@ -38,7 +38,7 @@ app:
   resources:
     # The vCPU number for the application. If not set, it defaults to 1 vCPU. 
     # The max number of vCPU that can be requested is 14.
-    cpu: 1
+    cpu: 2
 
   # Set a list of environment variables for the application. Environment 
   # variables such as JVM_ARGS, JAVA_HOME, or any WLP_* environment variables
@@ -70,7 +70,7 @@ app:
   # tries to automatically detect the Java version for the application. If the
   # service is unable to detect the Java runtime, it defaults to Java 17.
   #java: 17
-  
+  java: 21
   # Set the name of the custom domain for the application.
   #host: my_custom_domain.io
 
